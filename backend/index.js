@@ -1,9 +1,9 @@
 const express = require("express");
-const cors = require("cors"); // Added CORS import
+const cors = require("cors");
 const app = express();
 const port = 8080;
 
-app.use(cors()); // Added CORS middleware
+app.use(cors());
 app.use(express.json());
 
 app.get("/api", (req, res) => {
